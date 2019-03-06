@@ -2,7 +2,7 @@ from . import db
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
-# from . import login_manager
+from . import login_manager
 # from datetime import datetime
 
 class User(UserMixin,db.Model):
@@ -19,6 +19,8 @@ class User(UserMixin,db.Model):
     address_id=db.Column(db.Integer,db.ForeignKey('addresses.id'))
     contact_id=db.Column(db.Integer,db.ForeignKey('contacts.id'))
     products= db.relationship('Product',backref='user' ,lazy='dynamic')
+    
+
 
 
     @property
@@ -83,6 +85,30 @@ class Transaction(db.Model):
      buyer=db.Column(db.String(255))
      products = db.relationship('Product',backref='transaction' ,lazy='dynamic')
      total_price=db.Column(db.Integer)
+
+class Address(db.Model):
+       __tablename__='addresses'
+       id = db.Column(db.Integer,primary_key = True)
+       province=db.Column(db.String(255))
+       district=db.Column(db.String(255))
+       sector=db.Column(db.String(255))
+       cell=db.Column(db.String(255))
+       street_number=db.Column(db.Integer)
+       users = db.relationship('User',backref='address' ,lazy='dynamic')
+       locations = db.relationship('Location',backref='addresse' ,lazy='dynamic')
+
+
+class Location(db.Model):
+     __tablename__ = 'locations'
+     id = db.Column(db.Integer,primary_key = True)
+     address_id=db.Column(db.Integer,db.ForeignKey('addresses.id'))
+     products = db.relationship('Product',backref='location' ,lazy='dynamic')
+
+
+
+
+
+
       
 
 
