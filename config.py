@@ -4,7 +4,7 @@ class Config:
 
   
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://wecode:bellamava@localhost/discount'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://anais:12345@localhost/discount'
 
     
     UPLOADED_PHOTOS_DEST ='app/static/photos'
@@ -23,12 +23,12 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://wecode:bellamava@localhost/discount'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://anais:12345@localhost/discount'
 
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://wecode:bellamava@localhost/discount'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://anais:12345@localhost/discount'
     DEBUG = True
 
 config_options = {

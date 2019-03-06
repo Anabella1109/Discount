@@ -105,13 +105,6 @@ class Location(db.Model):
      products = db.relationship('Product',backref='location' ,lazy='dynamic')
 
 
-
-
-
-
-      
-
-
 class Cart(db.Model):
       
       __tablename__= 'carts'
