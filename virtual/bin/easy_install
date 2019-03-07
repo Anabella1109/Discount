@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/wecode/Documents/My-Projects/Discount thingy/virtual/bin/python" "$0" "$@"
-' '''
+#!/home/divine/Documents/Discount/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

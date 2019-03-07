@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+       
+    <link rel="stylesheet" href="{{url_for('static',filename='accessories.css')}}"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Satisfy');
+            </style>
+</head>
+
+<body>
+
+
+    <div class="heading">
+    <h1>IT Accessories</h1>
+
+</div>
+
+<div class="container">
+<div class="category">
+<h3>Shop by Categories</h3>
+
+   
+   <a href=""> <img src="data:image/jpeg;base64,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"width="260" height="180"></a>
+   <a href=""><img src="https://cdn.macrumors.com/article-new/2019/01/zaggslimbookgo-800x483.jpg"width="260" height="180"></a>
+    
+   <a href=""><img src="https://www.bassheadspeakers.com/wp-content/uploads/2018/08/JBL-Boombox-Bass-Bluetooth-Speakers.jpg" width="260" height="180"></a>
+    
+    <a href=""> <img src="https://fortunedotcom.files.wordpress.com/2018/10/surface-microsoft-event-e1538524183843.jpeg" width="260" height="180"></a>
+  
+        <a href=""><img src="https://images.tech.co/wp-content/uploads/2018/08/04102448/Best-Phones-For-2019-Medium.jpg"width="260" height="180"></a>
+    
+            <a href=""><img src="http://www.laptophub.net/wp-content/uploads/2014/10/best-noise-cancelling-headphones-beoplay-h8.jpg"width="260" height="180"></a>
+    
+
+</div>
+<div class="brand">
+        <h3>Shop by Brand</h3>
+     
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1200px-HP_logo_2012.svg.png"width="100" height="140"></a>
+            <a href=""><img src="https://www.reliablecounter.com/blog/wp-content/uploads/2018/10/apple.png"width="100" height="140"></a>
+                <a href=""><img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c533.png"width="100" height="140"></a>
+       
+        </div>
+
+<div class="usb">
+        <h3>USB</h3>
+        <a href=""><img src="https://purepng.com/public/uploads/large/purepng.com-black-usb-flash-driveusb-flash-drivepen-driveusb-driveusb-storageportable-storage-17015284331402kpwn.png"width="260" height="180"></a>
+        <a href=""> <img src="https://ya-webdesign.com/images/cable-transparent-6.png" width="260" height="180"></a>
+        </div>
+        <div class="well">
+        <i class="fa fa-plus" style="font-size:24px"></i> <a href="/" class="btn" >Add Product</a>
+    </div>
+</div>
+<footer>
+    <div class="third">
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-google-plus"></a></i>
+        
+        <a href=""><i class="fa fa-facebook-official"></i></a>
+        <a href=""><i class="fa fa-pinterest"></i></a>
+        <a href=""><i class="fa fa-slack"></i></a>
+       
+        <a href=""><i class="fa fa-share-square"></i></a>
+    </div>
+</footer>
+</body>
+</html>

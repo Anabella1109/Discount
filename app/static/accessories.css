@@ -1,0 +1,57 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ATR6Ce6giltbo8pp/information-technology-concept-on-computer-display-with-animated-dots-and-lines-of-molecule-on-blue-background-4k-video_rcnei4lj_thumbnail-full01.png');
+   background-size: cover;
+    font-size: 80px;
+    text-align: center;
+    color:white;
+    font-family: 'Satisfy', cursive;
+    /* padding:30px; */
+}
+.container{
+    background-color: white;
+    color:black;
+    font-size: 50px;
+}
+img{
+    display: inline;
+}
+.brand>a>img{
+    
+    border:1px solid grey;
+}
+.category>a>img{
+    
+    border:1px solid grey;
+  
+}
+.usb>a>img{
+    
+    border:1px solid grey;
+}
+a:link{
+    font-size: 30px;
+}
+.third a{
+    display:inline;color: darkgrey;
+    font-size:25px;
+    margin: 0 5px;
+    text-align: center;
+}
+/* .category{
+    animation-name: slideranimation;
+    animation-duration: 5s;
+}
+@keyframes slideranimation{
+    0%
+    {
+        left: 0px;
+    }
+    20%{
+        left: 0px; 
+    }
+    25%{
+        left:-800px;
+    }
+    
+}
+ */
