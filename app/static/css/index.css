@@ -1,7 +1,14 @@
 body{
    
-    background-color: lightcoral;
-    color:black;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://in.all.biz/img/in/catalog/537367.jpeg');
+    background-size: cover;
+    background-position:fixed;
+    background-attachment: scroll;
+    
+   
+    background-repeat:no-repeat;
+    opacity:0.9;
+    color:white;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
@@ -23,3 +30,50 @@ li a:hover {
     background-color: #555;
     color: white;
   }
+ h4{
+   
+animation-name: example;
+animation-direction: reverse;  
+animation-duration: 10s;
+ } 
+ @keyframes example {
+    from {background-color:grey;}
+    to {background-color:black;}
+  }
+ .navi{
+     padding-left: 200px;
+     padding-bottom: 50px
+ }
+ p{
+     font-size:30px;
+     padding:30px;
+ }
+ button{
+     margin:40px;
+     padding:20px;
+     font-size:40px;
+     background-color:grey ;
+     color:white;
+     font-weight:40px;
+ }
+ footer{
+     background-color: grey;
+     text-align: center;
+     margin:20px;
+ }
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    padding:10px 50px;
+    box-sizing: border-box;
+    transition:.3s;
+    font-size:40px;
+   
+}
+
+
+
+
