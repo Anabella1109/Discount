@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/wecode/Documents/My-Projects/Discount thingy/virtual"
+set -gx VIRTUAL_ENV "/home/nancy/Desktop/Discount/virtual"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
